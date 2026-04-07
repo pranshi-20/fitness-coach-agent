@@ -1,0 +1,17 @@
+[project]
+name = "fitness-coach-agent"
+version = "0.1.0"
+description = "OpenEnv environment for adaptive fitness coaching"
+authors = [
+  { name="Pranshi Garg" }
+]
+dependencies = [
+  "pydantic",
+  "openenv-core"
+]
+
+[tool.openenv]
+entry_point = "fitness_env.fitness_coach_env:FitnessCoachEnv"
+
+[project.scripts]
+server = "server.app:main"

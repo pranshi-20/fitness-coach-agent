@@ -1,0 +1,44 @@
+id: fitness-coach-agent
+name: fitness-coach-agent
+
+description: >
+  A real-world reinforcement learning environment for adaptive fitness planning.
+  The agent must balance energy, fatigue, injury risk, and goal-based training
+  (fat loss, muscle gain, endurance) over a weekly cycle.
+
+entry_point: fitness_env.fitness_coach_env:FitnessCoachEnv
+
+version: 1.0.0
+
+observation_space:
+  type: FitnessObservation
+
+action_space:
+  type: FitnessAction
+
+reward:
+  type: float
+
+tasks:
+  - name: recovery_balance
+    description: Prevent muscle overtraining and ensure recovery
+
+  - name: energy_management
+    description: Maintain optimal energy levels throughout the training cycle
+
+  - name: training_distribution
+    description: Ensure balanced workout distribution across muscle groups
+
+  - name: injury_management
+    description: Minimize injury risk caused by excessive fatigue
+
+  - name: goal_alignment
+    description: Align training decisions with the selected fitness goal
+
+tags:
+  - fitness
+  - reinforcement-learning
+  - planning
+  - health
+
+author: Pranshi Garg

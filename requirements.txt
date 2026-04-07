@@ -1,0 +1,6 @@
+openenv-core
+pydantic
+openai
+fastapi
+uvicorn
+gradio>=4.44.0
